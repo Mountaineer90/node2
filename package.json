@@ -7,6 +7,9 @@
     "node": "^4.6",
     "npm": "3.10.9"
   },
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "express": "4.13.3",
     "nconf": "0.8.2"

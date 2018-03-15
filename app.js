@@ -78,11 +78,11 @@ app.get("/test", /* @callback */ function (req, res) {
 
 app.get("/env", /* @callback */ function (req, res) {
 	var myResponse = "<HEAD>" +
-            "<title>Migration App</title>\n" +
+            "<title>Show Environment</title>\n" +
             "</HEAD>\n" +
             "<BODY>\n" +
             "<P>\n" +
-            "Hello! Welcome to the Migration app.<br>\n";
+            "Hello! Welcome to the Show Environment app.<br>\n";
 	if (req.query && req.query.var) {
             myResponse += "Value of " + req.query.var + " is " + nconf.get(req.query.var) + "\n";
 	} else {
