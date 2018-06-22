@@ -11,6 +11,8 @@ var appConfig = require("./config"),
 // configure logging, configuration, i18n early
 appConfig.init();
 
+console.log("Value of FOO_BAR is " + nconf.get("FOO_BAR"));
+
 var migratingProject;
 
 function resetMonitoring() {
